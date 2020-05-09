@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - CameraController
     - Starship
     Unity.RenderPipelines.Core.Runtime.dll:
     - UnityEngine.Rendering.UI.DebugUIHandlerBitField
@@ -36,6 +37,7 @@ ScriptsOnlyBuild:
     - UnityEngine.Rendering.Universal.PostProcessData
     - UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
     - UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset
+    - UnityEngine.Rendering.Universal.UniversalRenderPipelineEditorResources
     - UnityEngine.Rendering.Universal.Vignette
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
@@ -50,6 +52,8 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.ContentSizeFitter
@@ -94,95 +98,99 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11288}
+      Script: {instanceID: 11368}
     - Class: 114
-      Script: {instanceID: 11336}
+      Script: {instanceID: 11416}
     - Class: 114
-      Script: {instanceID: 11392}
+      Script: {instanceID: 11472}
     - Class: 114
-      Script: {instanceID: 11492}
+      Script: {instanceID: 11572}
     - Class: 114
-      Script: {instanceID: 11512}
+      Script: {instanceID: 11592}
     - Class: 114
-      Script: {instanceID: 11546}
+      Script: {instanceID: 11626}
     - Class: 114
-      Script: {instanceID: 11602}
+      Script: {instanceID: 11682}
     - Class: 114
-      Script: {instanceID: 11606}
+      Script: {instanceID: 11686}
     - Class: 114
-      Script: {instanceID: 11680}
+      Script: {instanceID: 11760}
     - Class: 114
-      Script: {instanceID: 11716}
+      Script: {instanceID: 11794}
     - Class: 114
-      Script: {instanceID: 11842}
+      Script: {instanceID: 11920}
     - Class: 114
-      Script: {instanceID: 11872}
+      Script: {instanceID: 11950}
     - Class: 114
-      Script: {instanceID: 12154}
+      Script: {instanceID: 12232}
     - Class: 114
-      Script: {instanceID: 12196}
+      Script: {instanceID: 12274}
     - Class: 114
-      Script: {instanceID: 12254}
+      Script: {instanceID: 12332}
     - Class: 114
-      Script: {instanceID: 12474}
+      Script: {instanceID: 12446}
     - Class: 114
-      Script: {instanceID: 12664}
+      Script: {instanceID: 12552}
     - Class: 114
-      Script: {instanceID: 12704}
+      Script: {instanceID: 12744}
     - Class: 114
-      Script: {instanceID: 12760}
+      Script: {instanceID: 12784}
     - Class: 114
-      Script: {instanceID: 12852}
+      Script: {instanceID: 12840}
     - Class: 114
-      Script: {instanceID: 13078}
+      Script: {instanceID: 12932}
     - Class: 114
-      Script: {instanceID: 13104}
+      Script: {instanceID: 13158}
     - Class: 114
-      Script: {instanceID: 13130}
+      Script: {instanceID: 13184}
     - Class: 114
-      Script: {instanceID: 13248}
+      Script: {instanceID: 13210}
     - Class: 114
-      Script: {instanceID: 13392}
-    - Class: 114
-      Script: {instanceID: 13452}
+      Script: {instanceID: 13328}
     - Class: 114
       Script: {instanceID: 13472}
     - Class: 114
-      Script: {instanceID: 13588}
+      Script: {instanceID: 13532}
     - Class: 114
-      Script: {instanceID: 13616}
+      Script: {instanceID: 13552}
     - Class: 114
-      Script: {instanceID: 13624}
+      Script: {instanceID: 13668}
     - Class: 114
-      Script: {instanceID: 13916}
+      Script: {instanceID: 13696}
     - Class: 114
-      Script: {instanceID: 13932}
+      Script: {instanceID: 13704}
     - Class: 114
-      Script: {instanceID: 13980}
+      Script: {instanceID: 13996}
     - Class: 114
-      Script: {instanceID: 14198}
+      Script: {instanceID: 14012}
     - Class: 114
-      Script: {instanceID: 14374}
+      Script: {instanceID: 14060}
     - Class: 114
-      Script: {instanceID: 14418}
+      Script: {instanceID: 14210}
     - Class: 114
-      Script: {instanceID: 14608}
+      Script: {instanceID: 14280}
     - Class: 114
-      Script: {instanceID: 14610}
+      Script: {instanceID: 14456}
     - Class: 114
-      Script: {instanceID: 14658}
+      Script: {instanceID: 14500}
     - Class: 114
-      Script: {instanceID: 14660}
+      Script: {instanceID: 14690}
     - Class: 114
-      Script: {instanceID: 14754}
+      Script: {instanceID: 14692}
     - Class: 114
-      Script: {instanceID: 14770}
+      Script: {instanceID: 14720}
     - Class: 114
-      Script: {instanceID: 14776}
+      Script: {instanceID: 14740}
     - Class: 114
-      Script: {instanceID: 64308}
+      Script: {instanceID: 14742}
     - Class: 114
-      Script: {instanceID: 109552}
+      Script: {instanceID: 14836}
+    - Class: 114
+      Script: {instanceID: 14852}
+    - Class: 114
+      Script: {instanceID: 14858}
+    - Class: 114
+      Script: {instanceID: 228706}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -208,12 +216,6 @@ ScriptsOnlyBuild:
     - Class: 258
       Script: {instanceID: 0}
   scriptHashData:
-  - hash:
-      serializedVersion: 2
-      Hash: 090a3c84271bd169fd6977e6879c7c00
-    assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
-    namespaceName: UnityEngine.Rendering.Universal
-    className: UniversalRenderPipelineAsset
   - hash:
       serializedVersion: 2
       Hash: 4bc4346a71a8df53a6b106f68ef3a190
@@ -510,6 +512,12 @@ ScriptsOnlyBuild:
     className: FilmGrain
   - hash:
       serializedVersion: 2
+      Hash: 090a3c84271bd169fd6977e6879c7c00
+    assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
+    namespaceName: UnityEngine.Rendering.Universal
+    className: UniversalRenderPipelineAsset
+  - hash:
+      serializedVersion: 2
       Hash: 5e1eefcd5106de6c2e85908a3b2d3f04
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering.UI
@@ -804,6 +812,12 @@ ScriptsOnlyBuild:
     className: LiftGammaGain
   - hash:
       serializedVersion: 2
+      Hash: bca9aeb00e9370064b3aa09524520d26
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Starship
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -1014,10 +1028,10 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: c09fe0cb4130c17f9622a6775f541298
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Starship
+    className: CameraController
   platform: 13
   scenePathNames:
   - Assets/PolygonSciFiSpace/Scenes/Demo_Exterior.unity
